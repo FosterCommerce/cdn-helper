@@ -1,0 +1,46 @@
+{
+    "name": "clickrain/cdn-helper",
+    "description": "A custom plugin that provides helper functions for working with CDN assets.",
+    "type": "craft-plugin",
+    "version": "1",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "cdn helper"
+    ],
+    "support": {
+        "docs": "https://bitbucket.org/clickraininc/cdn-helper/",
+        "issues": "https://bitbucket.org/clickraininc/cdn-helper/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Click Rain",
+            "homepage": "https://clickrain.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url":  "git@bitbucket.org:clickraininc/cdn-helper.git"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "clickrain\\cdnhelper\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "CDN Helper",
+        "handle": "cdn-helper",
+        "hasCpSettings": false,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/clickrain/cdn-helper/master/CHANGELOG.md",
+        "class": "clickrain\\cdnhelper\\CdnHelper"
+    }
+}
